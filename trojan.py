@@ -18,6 +18,11 @@ trojan_modules= []
 cconfigures   = False
 take_queue    = Queue.Queue()
 
+
+
+------------------------------------------------------------------------------
+'''
+memo
 def connect_to_github():
     
     gh = login(username="yourusername",password="yourpassword")
